@@ -1,0 +1,238 @@
+/* PRINCIPAL */
+
+*{
+    font-family: 'Roboto Mono', monospace;
+}
+
+p{
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+.presentacion{
+    font-size: 16px;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 15px;
+}
+
+body{
+    margin: 0;
+    background-color: #16161a ;
+}
+
+
+
+/* ICONO Y NAVEGADOR */
+
+/* ICONO Y PRUEBA DE ANIMACIÓN */
+
+.icono {
+    width: 120px;
+    border-radius: 10px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 14px;
+}
+
+.contenedor-bombilla{
+    width: 500px;
+    animation: bombilla 1s infinite 0s ease-in-out;
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+}
+
+/* NAVEGADOR */
+
+.nav-enlace {
+    border: solid #16161A;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #7f5af0;
+    color: #fffffe;
+    text-decoration: none;
+    border-radius: 10px;
+    height: 65px;
+    width: 150px;
+}
+
+.nav-enlace:hover {
+    border: solid #2cb67d;
+    background: #fffffe;
+    color: #2cb67d;
+}
+
+
+nav{
+    font-size: 20px;
+    margin-right: 0px;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    display: flex;
+}
+
+ul{
+    border: solid #2cb67d;
+    width: 100%;
+    background: #72757e;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    border-radius: 0px 0px 0px 10px;
+}
+
+li{
+    list-style-type: none;
+}
+
+
+/* SECCIONES */
+
+.title{
+    border: solid #2cb67d;
+    margin-top: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background: #94a1b2;
+    text-align: center;
+    border-radius: 10px;
+    color: #fffffe;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.title:hover{
+    background: #fffffe;
+    color: #2cb67d;
+}
+
+.seccion {
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+    background-color: #94a1b2;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+p {
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align:unset;
+    color: #010101;
+}
+
+
+/* ¿QUÉ OFRECEMOS? */
+
+.seccion{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.enlaces-separation{
+    margin-bottom: 50px;
+}
+
+.enlaces:hover{
+    background-color: #fffffe;
+    border: solid  #2cb67d;
+}
+
+
+/* ORDENADORES DE SOBREMESA */
+.enlaces{
+    background-color: #7f5af0;
+    border: solid #fffffe;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/*FOOTER */
+
+footer {
+    border: solid #2cb67d;
+    bottom: 0;
+    border-radius: 0px 8px 0px 0px;
+    font-size: 16px;
+    text-align: center;
+    position: fixed;
+    background-color: #72757e;
+    color: fffffe ;
+    font-family: Montserrar,sans-serif;
+}
+
+footer a:hover {
+    background-color: #2cb67d;
+    color: #16161a;
+    border-radius: 5px;
+    font-family: Montserrat,sans-serif;
+    text-decoration: none;
+}
+
+/* FORMULARIO */
+
+
+
+/* MEDIA QUERY */
+
+@media (max-width:734px){
+    nav {
+        flex-direction: column ;
+        align-items: center;
+        height: 200px;
+        margin-left: auto;
+        border-radius: 0px 0px 0px 10px ;
+        width: 400px ;
+        padding-bottom: 15px;
+
+    }
+    .nav-enlace {
+        align-items: center;
+        height: 35px;
+    }
+}
+
+/* ANIMACIONES */
+
+@keyframes bombilla {
+    0%{
+        opacity: 0%;
+/*         transform: translateY(0); */
+    }
+    25%{
+        opacity: 1;
+/*         transform: translateX(50px); */
+    }
+
+    100%{
+/*         transform: translateX(150px); */
+    }
+
+    100%{
+        opacity: 0%;
+/*         transform: translateY(0); */
+    }
+    
+}
